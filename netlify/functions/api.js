@@ -1,7 +1,7 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-// FIXED: Correct workflow URL
+// FIXED: Correct workflow URL and API key
 const API_URL = 'https://sim.so/api/workflows/b96d0050-bea3-48d4-a56d-397a7c2df646/execute';
-const API_KEY = 'sk-sim-Gy3SlBZ8oM6Y3au99qVAeLZfdelO_NeL';
+const API_KEY = 'sk-sim-hzwRhTECA4DJHSm7BZSNDM28K2ai0pt2';
 exports.handler = async (event) => {
     const headers = {
         'Access-Control-Allow-Origin': '*',
@@ -47,5 +47,3 @@ exports.handler = async (event) => {
         };
     }
 };
-
-
