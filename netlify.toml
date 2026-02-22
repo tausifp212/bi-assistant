@@ -3,6 +3,5 @@
   functions = "netlify/functions"
 [functions]
   node_bundler = "esbuild"
-  external_node_modules = ["node-fetch"]
 [context.production]
   environment = { NODE_VERSION = "18" }
