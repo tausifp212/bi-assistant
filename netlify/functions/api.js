@@ -1,6 +1,6 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 // FIXED: Correct workflow URL
-const API_URL = 'https://sim.so/api/workflows/b96d0050-bea3-48d4-a56d-397a7c2df646/execute';
+const API_URL = 'https://simstudio.ai/api/workflows/c63a2d64-d6b1-4b40-9057-f350d5b2b075/execute';
 const API_KEY = 'sk-sim-Gy3SlBZ8oM6Y3au99qVAeLZfdelO_NeL';
 exports.handler = async (event) => {
     const headers = {
@@ -47,3 +47,4 @@ exports.handler = async (event) => {
         };
     }
 };
+
